@@ -164,7 +164,9 @@ header .btn button:hover {
 }
 .carteleraGrow_ppal .imagen {
   height: fit-content;
-  margin-bottom: 0px;
+}
+.carteleraGrow_ppal .imagen img {
+  height: 770px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
