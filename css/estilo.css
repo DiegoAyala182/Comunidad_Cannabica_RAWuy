@@ -117,4 +117,23 @@ header .btn button:hover {
   color: rgb(228, 228, 228);
 }
 
+.paralax {
+  /* The image used */
+  background-image: url("../img/paralaxImg.png");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paralax .frase {
+  width: 630px;
+}
+.paralax .frase h2 {
+  font-size: 50px;
+  padding: 80px 0px 0px 150px;
+}
+
 /*# sourceMappingURL=estilo.css.map */
