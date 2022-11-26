@@ -17,6 +17,7 @@ header {
   background-color: transparent;
   background-image: url(../img/back-ima-header.png);
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 185px;
@@ -29,7 +30,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 130px;
+  height: 70px;
   width: auto;
   transition: all 0.3s;
 }
@@ -52,7 +53,7 @@ header .nav-link li:hover {
 }
 
 header .nav-link a {
-  font-size: 700;
+  font-size: 12px;
   color: #000;
   text-decoration: none;
 }
@@ -117,11 +118,111 @@ header .btn button:hover {
   color: rgb(228, 228, 228);
 }
 
+@media (min-width: 1024px) {
+  /* HEADER */
+  body {
+    /* background-color: #fff59d; */
+    background-image: url(https://rawgiving.com/wp-content/uploads/2019/05/HottestItems_Body-3.jpg);
+  }
+  header {
+    background-color: transparent;
+    background-image: url(../img/back-ima-header.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 185px;
+    padding: 5px 10%;
+    overflow: hidden;
+  }
+  header .logo {
+    cursor: pointer;
+  }
+  header .logo img {
+    height: 130px;
+    width: auto;
+    transition: all 0.3s;
+  }
+  header .logo img:hover {
+    transform: scale(1.2);
+  }
+  header .navlink {
+    list-style: none;
+  }
+  header .nav-link li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  header .nav-link li:hover {
+    transform: scale(1.1);
+  }
+  header .nav-link a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  header .nav-link li a:hover {
+    color: #eceff1;
+  }
+  header .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background-color: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  header .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+  }
+  /* FOOTER */
+  .div_footer {
+    color: #fff;
+    background-image: url(https://rawgiving.com/wp-content/uploads/2018/07/raw-footer-bg-1.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    padding-bottom: 30px;
+    margin-top: 600px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .div_footer .container {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 450px;
+  }
+  .div_footer .container .nav.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .div_footer .container ul {
+    list-style: none;
+  }
+  .div_footer .container ul li a {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 10px;
+    text-decoration: none !important;
+  }
+  .div_footer .container p {
+    font-size: 17px;
+    margin: 5px 0;
+    color: rgb(228, 228, 228);
+  }
+}
 .paralax {
   /* The image used */
-  background-image: url("../img/paralaxImg.png");
+  background-image: url("../img/paralaxMobile.png");
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 0px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -129,44 +230,97 @@ header .btn button:hover {
   background-size: cover;
 }
 .paralax .frase {
-  width: 630px;
+  width: 200px;
 }
 .paralax .frase h2 {
-  font-size: 50px;
-  padding: 80px 0px 0px 150px;
+  font-size: 20px;
+  padding: 60px 0px 0px 20px;
 }
 
 .carteleraGrow_ppal {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 .carteleraGrow_ppal .div-titulo {
-  width: 600px;
-  height: 500px;
+  width: 300px;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .carteleraGrow_ppal .div-titulo h2 {
-  font-size: 70px;
+  font-size: 30px;
   font-family: "ABeeZee", sans-serif;
-  margin-top: 90px;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
   text-align: center;
 }
 .carteleraGrow_ppal .div-titulo p {
   text-align: center;
-  height: 400px;
-  font-size: 37px;
-  margin-top: 30px;
-  line-height: 50px;
+  height: 0px;
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 25px;
 }
 .carteleraGrow_ppal .imagen {
   height: fit-content;
 }
 .carteleraGrow_ppal .imagen img {
-  height: 770px;
+  height: 170px;
+}
+
+@media (min-width: 1024px) {
+  .paralax {
+    /* The image used */
+    background-image: url("../img/paralaxImg.png");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .paralax .frase {
+    width: 630px;
+  }
+  .paralax .frase h2 {
+    font-size: 50px;
+    padding: 80px 0px 0px 150px;
+  }
+  .carteleraGrow_ppal {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .carteleraGrow_ppal .div-titulo {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+  .carteleraGrow_ppal .div-titulo h2 {
+    font-size: 70px;
+    font-family: "ABeeZee", sans-serif;
+    margin-top: 90px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .carteleraGrow_ppal .div-titulo p {
+    text-align: center;
+    height: 400px;
+    font-size: 37px;
+    margin-top: 30px;
+    line-height: 50px;
+  }
+  .carteleraGrow_ppal .imagen {
+    height: fit-content;
+  }
+  .carteleraGrow_ppal .imagen img {
+    height: 770px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
